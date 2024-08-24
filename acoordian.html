@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>40px
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>CSS-only Accordion</title>
+    <style>
+        h1{
+            text-align: center;
+            color: green;
+            text-decoration:underline;
+            margin-top: 50px;
+        }
+        .image{
+            display: flex;
+        }
+        b{
+            position: relative;
+            font-size: 20px;
+            left: 50px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           color:teal;
+            width: 550px;
+            
+        }
+        img{
+            width: 400px;
+        }
+
+        
+        /* Styles for the accordion */
+        .accordion {
+          overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 90px;
+        }
+
+        .accordion-item {
+            margin: 20px;
+            
+        }
+
+        .accordion-header {
+            background-color:rgb(208, 127, 127);
+            padding: 16px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: 3px solid black;
+        }
+
+       
+
+        .accordion-content {
+            padding: 16px;
+            display: none;
+            background-color:antiquewhite;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WARANGAL  BEST  PLACES  TO  VISIT</h1>
+
+    <div class="accordion">
+       
+        <div class="accordion-item">
+            <div class="accordion-header">LAKNAVARAM  LAKE</div>
+            <div class="accordion-content">
+                <p class="image">
+                    <img src="C:\Users\Lenovo\Desktop\FSD BATCH\download.jpeg"/>
+                    <b>
+                        vast lake featuring a hanging bridgelaknavaram is a man made lake that is  encircled by mountains and foressts.
+                        The Lakhnavaram Lake which hides itself amidst the hills was discovered during the Kakatiya reign and the rulers 
+                        expanded it to grow as a source of irrigation. An added attraction to this mystic beauty is the suspension bridge. 
+                        The hanging bridge takes you to the mini island in the lake.Laknavaram Lake is a lake in Govindaraopet mandal in Mulugu district. It is 17 kilometres (11 mi) from Mulugu and 80 kilometres (50 mi) from Warangal, Telangana.
+                       
+                    </b>
+                   
+                </p>
+            </div>
+        </div>
+
+   
+        <div class="accordion-item">
+            <div class="accordion-header">RAMMAPA TEMPLE</div>
+            <div class="accordion-content">
+                <p class="image">
+                    <img src="C:\Users\Lenovo\Desktop\FSD BATCH\rammapa.jpeg"/>
+                    <b>Another striking feature of this temple is that it is built with bricks that are so light that they can easily float on water. The temple which is situated in a valley took nearly 40 years to be completed. Elaborate carvings line the walls and also cover the pillars and ceilings of the temple.
+                        Ramappa Temple, also known as the Rudreshwara temple, is a Kakatiya style Hindu temple dedicated to the Hindu god Shiva, located in Palampet village, Mulugu district, Telangana, India. It is 15 km (9.3 mi) from Mulugu, 66 km (41 mi) from Warangal, 209 km (130 mi) from Hyderabad. An inscription in the temple says it was constructed in the year 1213 CE by Recharla Rudra Reddy—a general of Kakatiya ruler Ganapati Deva 
+                    </b>
+                </p>
+            </div>
+        </div>
+         
+        <div class="accordion-item">
+            <div class="accordion-header"> WARANGAL FORT</div>
+            <div class="accordion-content">
+                <p class="image">
+                    <img src="C:\Users\Lenovo\Desktop\FSD BATCH\download (1).jpeg">
+                    <b>
+                        The Warangal Fort, which is the main attraction of the city is spread over a radius of 19 kilometers between Warangal and Hanamkonda. The fort was constructed in the 13th century in the reign of the Kakateya King Ganapati Deva. 
+                        During Eighth Century A.D. , Warangal with an old name “Orukal” has served as Capital City of Yadava king of the Kakatiyas or Ganapatis making Warangal as Capital City.
+                        The Warangal fort is most famous for its graceful and finitely carved arches and pillars.
+                        For a third and final time, the fort was attacked by Sultan Muhammad bin Tughluq ( r. 1325–1351), who held siege over the fort.
+                    </b>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        // JavaScript to toggle accordion content
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
